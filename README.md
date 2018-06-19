@@ -2,7 +2,10 @@
 
 Environment:
 
-python 2.7.13(2.7.x)
+MySQL Ver 14.14 Distrib 5.7.18
+- https://www.mysql.com/downloads/
+
+python 2.7.13
 - https://www.python.org/downloads/
 
 Python Package Needed:
@@ -25,16 +28,22 @@ Configuration Setting:
 
 2. Change the correct MySQL server url in server.py line 9
 
-3. Remember to open the firewall on port 981 for socket
+3. Remember to open the firewall on port 981 for socket and port for MySQL
 
 Setup:
 
-1. Download, install and set up the environment path variable for python
+1. Clone just-beat-it-server from git with url: https://github.com/mysyu/just-beat-it-server
 
-2. Download and install mysql connector for python version 2.x with specific OS version
+2. Download, install and set up the environment path variable for MySQL
 
-3. Install pip, mysql-connector-python
+3. Open cmd and change current dir to just-beat-it-server project folder
 
-4. Clone just-beat-it-server by git
+4. Excute cmd to import db: mysql -u [root] -p < jbit.sql
 
-5. Excute server with cmd: python just-beat-it-server.py
+5. Download, install and set up the environment path variable for python
+
+6. Download and install mysql connector for python version 2.x with specific OS version
+
+7. Install pip, mysql-connector-python
+
+8. Excute server with cmd: python just-beat-it-server.py
